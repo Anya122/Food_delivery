@@ -1,12 +1,14 @@
 import s from './card.module.css'
 
 
-function Card({url, title = 'Дефолтный заголовок', description, cost = "2700", count = "500г."}) {
+function Card({url, title, description, cost, count, children}) {
   return (
     <div className={s.card}>
       <img src={url} alt="" className={s.cardPreview} />
 
       <h2 className={s.title}>{title}</h2>
+
+      {children}
 
       <p className={s.cardDescription}>
         {description}

@@ -1,6 +1,8 @@
 import s from "./products.module.css";
 import Card from "../../components/elements/card/card";
 
+import products from "../../products";
+
 // деструктуризация - присванивание, синтаксис js, который позваляет красивее и удобнее распаковывать 
 // объекты, массивы в несколько переменных одновременно
 function Products() {
@@ -25,7 +27,19 @@ function Products() {
                 </div>
             </div>
             <div className={s.cards}>
-            <Card
+                {products.map(item => {
+                    return (
+                        <Card
+                            key={item.id}
+                            url={item.url}
+                            title={item.name}
+                            description={item.description}
+                            cost={item.price}
+                            count={item.weight}
+                        />
+                    )
+                })}
+            {/* <Card
                 url="/images/1.png"
                 title="Устрицы по рокфеллеровски"
                 description="Значимость этих проблем настолько очевидна, что укрепление и развитие структуры "
@@ -70,7 +84,7 @@ function Products() {
                 url="/images/1.png"
                 title="Свиные ребрышки на гриле с зеленью"
                 description="Не следует, однако забывать, что реализация намеченных плановых "
-            />
+            /> */}
             </div>
             
         </div>
