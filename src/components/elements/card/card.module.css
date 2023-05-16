@@ -1,0 +1,49 @@
+.card{
+    width: 312px;
+    border: 1px solid #D58C51;
+    padding: 46px 21px 0px 21px;
+}
+
+.cardPreview{
+    width: 100%;
+    margin-bottom: 31px;
+}
+
+.title{
+    color: #D58C51;
+    font-weight: 500;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 13px;
+}
+
+.cardDescription{
+    color: #D58C51;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 53px;
+}
+
+.cost{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.count{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.cardBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.plus:hover {
+    fill: #D58C51;
+    cursor: pointer;
+}

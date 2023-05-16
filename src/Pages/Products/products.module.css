@@ -1,0 +1,49 @@
+div, h1, h2, p{
+    font-family: 'Montserrat';
+}
+
+.products{
+    height: calc(100% - 170px);
+    background-color: #161516;
+}
+
+.container{
+    width: 1310px;
+    margin: 0 auto;
+    
+}
+
+.title{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 31px;
+    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px 20px;
+    margin-top: 20px;
+}
+
+.header{
+    height: 150px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gotoBasket{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.basketText{
+    width: 151px;
+    text-align: right;  
+    color: #FFFFFF;
+}
