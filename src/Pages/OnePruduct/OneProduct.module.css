@@ -1,0 +1,125 @@
+.Product{
+    background-color: black;
+    background-image: url("../../../public/images/fon.png");
+    height: 100vh;
+}
+
+.title{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 31px;
+    text-align: center;
+    
+    
+}
+
+.header{
+    display: flex;
+    padding-top: 53px;
+    gap: 0 63px;
+    margin-bottom: 38px;
+    justify-content: space-between;
+    padding: 56px 68px 45px 68px;
+}
+
+.gotoBasket{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.basketText{
+    width: 151px;
+    text-align: right;  
+    color: #FFFFFF;
+}
+
+.goods{
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.card{
+    display: flex;
+    gap: 0 190px;
+    align-items: center;
+}
+
+.titleCard{
+    color:#D58C51;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 21px;
+}
+
+.cardDesc{
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 39px;
+}
+
+div, h1, h2, p{
+    font-family: 'Montserrat';
+}
+
+.cardPreview{
+    width: 501px;
+    height: 503px;
+}
+
+.cost{
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    color:#FFFFFF;
+}
+
+.count{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color:#FFFFFF;
+}
+
+.btn{
+    width: 200px;
+    height: 42px;
+    background-color: #D58C51;
+    border: none;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    gap: 0 68px;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+.exit{
+    width: 200px;
+    height: 42px;
+    color: #D58C51;
+    border: 1px solid #D58C51;
+    background-color: #161516;
+    cursor: pointer;
+    
+}
+
+.exit:hover{
+    opacity: 0.7;
+}

@@ -3,7 +3,6 @@ div, h1, h2, p{
 }
 
 .products{
-    height: calc(100vh - 170px);
     background-color: #161516;
 }
 
@@ -54,3 +53,19 @@ div, h1, h2, p{
     gap: 4px 0;
 }
 
+body{
+    background-color: #161516;
+}
+.exit{
+    width: 200px;
+    height: 42px;
+    color: #D58C51;
+    border: 1px solid #D58C51;
+    background-color: #161516;
+    cursor: pointer;
+    
+}
+
+.exit:hover{
+    opacity: 0.7;
+}

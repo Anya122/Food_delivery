@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Basket from './Pages/Basket';
 import Products from './Pages/Products';
-import Posts from './Pages/Posts';
+
 
 import {Provider} from 'react-redux'
 import {store} from "./store/store"

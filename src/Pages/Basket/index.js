@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
 import {removeBasket} from "../../store/reducers/products";
-
+import {clearProduct} from "../../store/reducers/products";
 
 function Basket({url, title, cost}) {
 
@@ -13,13 +13,20 @@ function Basket({url, title, cost}) {
 
     return(
         <div className={s.basket}>
-            <div className={s.container}>
-                <header className={s.header}>
+            <header className={s.header}>
                     <Link to = "/Products">
-                        <img src="/images/arrow.svg" alt="" />
+                        <img 
+                            onClick={() => {
+                                dispatch(clearProduct());
+                              }}src="/images/arrow.svg" alt="" />
                     </Link>
                     <h1 className={s.title}>Корзина с выбранными товарами</h1>
+                    <Link to = "/Login">
+                        <button className={s.exit}>Выйти</button>
+                    </Link>
                 </header>
+            <div className={s.container}>
+                
 
                 <ul className={s.cadrs}>
                     {basketProducts.map((item,index) => {
@@ -52,7 +59,7 @@ function Basket({url, title, cost}) {
                         <div className={s.cost}>{priceProducts}₽</div>
                     </div>
 
-                    <button className={s.btn}>Оформить заказ</button>
+                    <a href = "https://dostavka.yandex.ru/"><button className={s.btn}> Оформить заказ</button></a>
                     
                 </div>
             </div>

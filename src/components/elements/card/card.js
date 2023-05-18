@@ -1,6 +1,8 @@
 import s from './card.module.css';
 import {useDispatch} from "react-redux";
 import {addBasket} from "../../../store/reducers/products";
+import {Link} from "react-router-dom";
+import {addProduct} from "../../../store/reducers/products";
 
 
 function Card({url, title, description, cost, count, uuid}) {
@@ -9,7 +11,20 @@ function Card({url, title, description, cost, count, uuid}) {
 
   return (
     <div className={s.card}>
-      <img src={url} alt="" className={s.cardPreview} />
+      <Link to = "/OneProduct">
+        <img onClick={() => {
+                        dispatch(addProduct({
+                            url,
+                            title,
+                            cost,
+                            count,
+                            description,
+                            
+                            
+                          }));
+                    }} src={url} alt="" className={s.cardPreview} />
+      </Link>
+      
 
       <h2 className={s.title}>{title}</h2>
 

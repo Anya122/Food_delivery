@@ -2,6 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     basket: [],
+    product: [],
     count: 0,
     fullPrice: 0,
 }
@@ -20,9 +21,6 @@ export const productsSlice = createSlice({
     name: 'productsRedux',
     initialState,
     reducers: {
-        incCount: (state) =>{
-            state.count = state.count + 1
-        },
         addBasket: (state,action) => {
             state.basket.push(action.payload)
             setPrice(state)
@@ -34,9 +32,15 @@ export const productsSlice = createSlice({
             })
             setPrice(state)
             setCount(state)
+        },
+        addProduct: (state,action) => {
+            state.product.push(action.payload)
+        },
+        clearProduct: (state,action) => {
+            state.product = [];
         }
     },
 })
 
-export const {addBasket, removeBasket, incCount} = productsSlice.actions;
+export const {addBasket, removeBasket, addProduct, clearProduct} = productsSlice.actions;
 export default productsSlice.reducer;

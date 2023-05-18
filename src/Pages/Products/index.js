@@ -6,6 +6,9 @@ import {useSelector} from "react-redux";
 import uuid from 'react-uuid';
 
 
+
+
+
 function Products() {
 
     console.log(uuid());
@@ -23,10 +26,15 @@ function Products() {
                     <div className={s.goods}>
                         <div className={s.basketText}>{countProducts} товара </div>
                         <div className={s.basketText}>на сумму {priceProducts} ₽ </div>
+                        
                     </div>
                     <Link to = "/Basket">
-                    <img src="/images/Basket.svg" alt=""/>
+                        <img src="/images/Basket.svg" alt="" />
                     </Link>
+                    <Link to = "/Login">
+                        <button className={s.exit}>Выйти</button>
+                    </Link>
+                    
                     
                 </div>
             </div>
