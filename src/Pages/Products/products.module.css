@@ -3,7 +3,7 @@ div, h1, h2, p{
 }
 
 .products{
-    height: calc(100% - 170px);
+    height: calc(100vh - 170px);
     background-color: #161516;
 }
 
@@ -47,3 +47,10 @@ div, h1, h2, p{
     text-align: right;  
     color: #FFFFFF;
 }
+
+.goods{
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+}
+
